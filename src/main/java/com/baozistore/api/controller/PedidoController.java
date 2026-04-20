@@ -41,7 +41,7 @@ public class PedidoController {
 
   @PostMapping()
   @ResponseStatus(code = HttpStatus.CREATED)
-  public Pedido postMethodName(@RequestBody Pedido pedido) {
+  public Pedido cadastrar(@RequestBody Pedido pedido) {
     return repository.save(pedido);
   }
 
